@@ -4,13 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>That Pink Café — Berlin · Rixdorf</title>
-  <meta name="description" content="Specialty coffee, pastries & sandwiches in Berlin (Rixdorf/Neukölln). Wi-Fi, outdoor seating, takeaway, dog friendly." />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="That Pink Café — Berlin · Rixdorf" />
-  <meta property="og:description" content="Coffee, pastries & sandwiches. Wi-Fi, outdoor seating, takeaway, dog friendly." />
-  <meta property="og:image" content="assets/og.jpg" />
-  <meta property="og:type" content="website" />
+  <meta name="description" content="Specialty coffee, cozy café in Berlin. Dog friendly 🐾. Wi-Fi, takeaway, outdoor seating." />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,422 +15,225 @@
 </head>
 
 <body>
-  <a class="skip" href="#content" data-i18n="skip">Перейти к содержимому</a>
+<a class="skip" href="#content" data-i18n="skip">Перейти к содержимому</a>
 
-  <!-- HEADER -->
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="brand__mark" aria-hidden="true"><span class="brand__dot"></span></span>
-        <span class="brand__text">
-          <strong>That Pink Café</strong>
-          <span class="brand__sub" data-i18n="brand_sub">Berlin · Rixdorf · ex Geschwister Nothaft</span>
-        </span>
-      </a>
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header__inner">
 
-      <div class="header__right">
-        <div class="lang">
-          <button class="lang__btn" id="langBtn" aria-expanded="false" aria-controls="langMenu">
-            <span id="langLabel">RU</span>
-            <span class="lang__chev" aria-hidden="true">▾</span>
-          </button>
-          <div class="lang__menu" id="langMenu" role="menu" aria-label="Language">
-            <button role="menuitem" data-lang="ru">Русский</button>
-            <button role="menuitem" data-lang="en">English</button>
-            <button role="menuitem" data-lang="de">Deutsch</button>
-          </div>
-        </div>
+    <a class="brand" href="#top">
+      <span class="brand__dot"></span>
+      <div>
+        <strong>That Pink Café</strong>
+        <div class="brand__sub" data-i18n="brand_sub">Berlin · Rixdorf · ex Geschwister Nothaft</div>
+      </div>
+    </a>
 
-        <button class="navBtn" id="navBtn" aria-expanded="false" aria-controls="nav">
-          <span class="navBtn__bar"></span>
-          <span class="navBtn__bar"></span>
-          <span class="navBtn__bar"></span>
-          <span class="srOnly" data-i18n="menu">Меню</span>
+    <div class="header__right">
+      <!-- Language -->
+      <div class="lang">
+        <button class="lang__btn" id="langBtn" type="button" aria-expanded="false">
+          <span class="lang__flag" id="langFlag">🇷🇺</span>
+          <span id="langLabel">RU</span>
+          <span class="lang__chev">▾</span>
         </button>
+
+        <div class="lang__menu" id="langMenu">
+          <button type="button" data-lang="ru"><span class="f">🇷🇺</span> Русский</button>
+          <button type="button" data-lang="en"><span class="f">🇬🇧</span> English</button>
+          <button type="button" data-lang="de"><span class="f">🇩🇪</span> Deutsch</button>
+        </div>
       </div>
 
-      <nav class="nav" id="nav">
-        <a href="#about" data-i18n="nav_about">О месте</a>
-        <a href="#menu" data-i18n="nav_menu">Меню</a>
-        <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
-        <a href="#gallery" data-i18n="nav_gallery">Фото</a>
-        <a href="#location" data-i18n="nav_contacts">Контакты</a>
-        <a class="btn btn--small" href="#visit" data-i18n="nav_visit">Как зайти</a>
-      </nav>
+      <!-- Mobile nav -->
+      <button class="navBtn" id="navBtn" aria-label="Menu">
+        <span class="navBtn__bar"></span>
+        <span class="navBtn__bar"></span>
+        <span class="navBtn__bar"></span>
+      </button>
     </div>
-  </header>
 
-  <main id="content">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container hero__grid">
-        <div class="hero__content">
-          <p class="pill"><span data-i18n="hero_pill">Specialty coffee · cozy meeting point</span></p>
+    <nav class="nav" id="nav">
+      <a href="#about" data-i18n="nav_about">О месте</a>
+      <a href="#menu" data-i18n="nav_menu">Меню</a>
+      <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
+      <a href="#gallery" data-i18n="nav_gallery">Фото</a>
+      <a href="#location" data-i18n="nav_contacts">Контакты</a>
+    </nav>
 
-          <h1 data-i18n="hero_h1">Розовое кафе, где хочется задержаться</h1>
-          <p class="lead" data-i18n="hero_lead">
-            Кофе, выпечка и сэндвичи в атмосфере “cozy & minimal”.
-            Wi-Fi, посадка внутри и на улице, можно взять с собой.
-          </p>
+  </div>
+</header>
 
-          <div class="hero__cta">
-            <a class="btn" href="#location" data-i18n="hero_cta_map">Открыть карту</a>
-            <a class="btn btn--ghost" href="#menu" data-i18n="hero_cta_menu">Посмотреть меню</a>
-          </div>
+<main id="content">
 
-          <div class="metaCards">
-            <div class="metaCard">
-              <span class="metaCard__k" data-i18n="meta_addr_k">Адрес</span>
-              <span class="metaCard__v">Schwarzastraße 9, 12055 Berlin</span>
-            </div>
-            <div class="metaCard">
-              <span class="metaCard__k" data-i18n="meta_today_k">Сегодня</span>
-              <span class="metaCard__v" id="todayHours">…</span>
-            </div>
-            <div class="metaCard">
-              <span class="metaCard__k" data-i18n="meta_phone_k">Телефон</span>
-              <a class="metaCard__v link" href="tel:+491632301455">+49 163 2301455</a>
-            </div>
-          </div>
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="container hero__grid">
 
-          <div class="badgesRow">
-            <span class="dogPill" title="Dog friendly">
-              <span class="paw" aria-hidden="true">🐾</span>
-              <span data-i18n="dog_friendly">Dog friendly</span>
-            </span>
-            <span class="miniPill">Wi-Fi</span>
-            <span class="miniPill" data-i18n="takeaway">Takeaway</span>
-            <span class="miniPill" data-i18n="outdoor">Outdoor</span>
-          </div>
+    <div>
+      <span class="pill" data-i18n="hero_pill">Specialty coffee · cozy meeting point</span>
+      <h1 data-i18n="hero_h1">Розовое кафе, где хочется задержаться</h1>
+      <p class="lead" data-i18n="hero_lead">
+        Кофе, сэндвичи и атмосфера уюта. Можно с собакой 🐾
+      </p>
 
-          <p class="note" data-i18n="hero_note">Ранее место было известно как <em>Geschwister Nothaft</em>.</p>
-        </div>
-
-        <div class="hero__media">
-          <figure class="heroCard">
-            <img src="assets/hero.jpg" alt="That Pink Café facade" loading="eager" decoding="async" />
-            <figcaption>
-              <span data-i18n="hero_caption_left">Coffee · pastries · sandwiches</span>
-              <span class="sep">·</span>
-              <span data-i18n="hero_caption_right">Takeaway · Outdoor seating</span>
-            </figcaption>
-          </figure>
-
-          <div class="stats">
-            <div class="stat">
-              <div class="stat__n">4.6</div>
-              <div class="stat__t" data-i18n="stat_rating">оценка (Google)</div>
-            </div>
-            <div class="stat">
-              <div class="stat__n">Wi-Fi</div>
-              <div class="stat__t" data-i18n="stat_wifi">удобно работать</div>
-            </div>
-            <div class="stat">
-              <div class="stat__n">€</div>
-              <div class="stat__t" data-i18n="stat_price">ориентир по чеку</div>
-            </div>
-          </div>
-        </div>
+      <div class="badgesRow">
+        <span class="dogPill">🐾 <span data-i18n="dog_friendly">Dog friendly</span></span>
+        <span class="miniPill">Wi-Fi</span>
+        <span class="miniPill" data-i18n="takeaway">Takeaway</span>
+        <span class="miniPill" data-i18n="outdoor">Outdoor</span>
       </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 data-i18n="about_h2">О месте</h2>
-          <p data-i18n="about_p">
-            Уютное кафе в Neukölln/Rixdorf: напитки (включая matcha), выпечка и сэндвичи.
-            Формат “laptop-friendly”, часто отмечают дружелюбный сервис.
-          </p>
-        </div>
-
-        <div class="cards3">
-          <article class="card">
-            <h3 data-i18n="card1_h">Кофе и напитки</h3>
-            <p data-i18n="card1_p">Классика + любимые позиции гостей: капучино, matcha, чай, какао.</p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="card2_h">Еда</h3>
-            <p data-i18n="card2_p">Сэндвичи (4 начинки), overnight oats и chia mango.</p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="card3_h">Комфорт</h3>
-            <p data-i18n="card3_p">Wi-Fi, посадка внутри/снаружи, take away, dog friendly 🐾.</p>
-          </article>
-        </div>
-
-        <div class="banner" id="visit">
-          <div class="banner__text">
-            <h3 data-i18n="banner_h">Зайти на кофе по пути</h3>
-            <p data-i18n="banner_p">
-              Скопируй адрес и открой маршрут в Google Maps. Отлично подходит для встречи или работы.
-            </p>
-          </div>
-          <div class="banner__actions">
-            <button class="btn btn--ghost" id="copyAddress" type="button" data-i18n="copy_addr">Скопировать адрес</button>
-            <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps?q=52.472729,13.454635" data-i18n="open_maps">Открыть в Google Maps</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- MENU -->
-    <section class="section section--alt" id="menu">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 data-i18n="menu_h2">Меню</h2>
-          <p data-i18n="menu_p">Цены добавлены по фото меню. Для части напитков указаны два объёма (S/L).</p>
-        </div>
-
-        <div class="menuGrid">
-          <!-- DRINKS -->
-          <div class="menuCol">
-            <h3 data-i18n="m1_h">Напитки</h3>
-            <ul class="menuList">
-              <li><span>Espresso</span><span class="price" data-price="2.5" data-price2="3.3"></span></li>
-              <li><span>Americano</span><span class="price" data-price="3.2" data-price2="3.9"></span></li>
-              <li><span>Cappuccino</span><span class="price" data-price="3.9" data-price2="4.9"></span></li>
-              <li><span>Flat White</span><span class="price" data-price="4.2"></span></li>
-              <li><span>Latte</span><span class="price" data-price="4.8"></span></li>
-              <li><span>Cortado</span><span class="price" data-price="3.4"></span></li>
-              <li><span>Chai latte</span><span class="price" data-price="4.9"></span></li>
-              <li><span>Tea</span><span class="price" data-price="4.3" data-price2="4.7"></span></li>
-              <li><span>Hot choco</span><span class="price" data-price="4.4" data-price2="4.9"></span></li>
-              <li><span>Matcha</span><span class="price" data-price="5.0"></span></li>
-            </ul>
-
-            <div class="fineprint">
-              <p class="muted small" style="margin:12px 0 0;">
-                Extras:
-                <span class="priceInline" data-price="0.4" data-label="Oat"></span>
-                <span class="dotSep">·</span>
-                <span class="priceInline" data-price="0.5" data-label="On ice"></span>
-              </p>
-            </div>
-          </div>
-
-          <!-- FOOD -->
-          <div class="menuCol">
-            <h3 data-i18n="food_h">Еда</h3>
-
-            <div class="foodBlock">
-              <div class="foodHead">
-                <div>
-                  <div class="foodTitle" data-i18n="food_sandwiches">Sandwiches</div>
-                  <div class="foodSub" data-i18n="food_sandwiches_sub">choose one</div>
-                </div>
-                <div class="foodPrice"><span class="badgePrice" data-fixed-price="6.9">€6.9</span></div>
-              </div>
-              <ul class="foodList">
-                <li>Hummus Aubergine</li>
-                <li>Grilled Cheese</li>
-                <li>Fenchel Salami</li>
-                <li>Avo Tomato Chutney</li>
-              </ul>
-            </div>
-
-            <div class="foodBlock">
-              <div class="foodHead">
-                <div class="foodTitle">Overnight oat’s</div>
-                <div class="foodPrice"><span class="badgePrice" data-fixed-price="5.5">€5.5</span></div>
-              </div>
-              <div class="foodHint muted small" data-i18n="food_oats_hint">cold, filling, perfect with coffee</div>
-            </div>
-
-            <div class="foodBlock">
-              <div class="foodHead">
-                <div class="foodTitle">Chia Mango</div>
-                <div class="foodPrice"><span class="badgePrice" data-fixed-price="5.5">€5.5</span></div>
-              </div>
-              <div class="foodHint muted small" data-i18n="food_chia_hint">light & fresh</div>
-            </div>
-          </div>
-
-          <!-- FEATURES -->
-          <div class="menuCol">
-            <h3 data-i18n="m3_h">Фишки</h3>
-            <ul class="menuList">
-              <li><span>Wi-Fi</span><span class="muted">✓</span></li>
-              <li><span data-i18n="outdoor">Outdoor</span><span class="muted">✓</span></li>
-              <li><span data-i18n="takeaway">Takeaway</span><span class="muted">✓</span></li>
-              <li><span><span class="paw" aria-hidden="true">🐾</span> <span data-i18n="dog_friendly">Dog friendly</span></span><span class="muted">✓</span></li>
-              <li><span data-i18n="cards">Cards</span><span class="muted">✓</span></li>
-            </ul>
-            <p class="muted small" style="margin:12px 0 0;" data-i18n="menu_note">Prices are shown in EUR. Some drinks have two sizes (S/L).</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- REVIEWS -->
-    <section class="section" id="reviews">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 data-i18n="rev_h2">Отзывы</h2>
-          <p data-i18n="rev_p">Короткие пересказы отзывов из открытых источников (без копипаста).</p>
-        </div>
-
-        <div class="carousel" aria-label="Reviews carousel">
-          <div class="carousel__track" id="revTrack"></div>
-          <div class="carousel__controls">
-            <button class="iconBtn" id="revPrev" aria-label="Previous">‹</button>
-            <div class="dots" id="revDots" aria-label="Slides"></div>
-            <button class="iconBtn" id="revNext" aria-label="Next">›</button>
-          </div>
-        </div>
-
-        <p class="muted small" data-i18n="rev_hint">Хочешь — добавлю блок “оставить отзыв” с кнопками Google/Tripadvisor и UTM.</p>
-      </div>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="section section--alt" id="gallery">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 data-i18n="gal_h2">Фото</h2>
-          <p data-i18n="gal_p">Положи изображения в папку <code>/assets</code> (имена — как ниже).</p>
-        </div>
-
-        <div class="gallery">
-          <button class="gItem" data-img="assets/gallery-1.jpg" data-alt="Menu / bar">
-            <img src="assets/gallery-1.jpg" alt="Menu / bar" loading="lazy" />
-          </button>
-          <button class="gItem" data-img="assets/gallery-2.jpg" data-alt="Interior">
-            <img src="assets/gallery-2.jpg" alt="Interior" loading="lazy" />
-          </button>
-          <button class="gItem" data-img="assets/gallery-3.jpg" data-alt="Facade pink vibes">
-            <img src="assets/gallery-3.jpg" alt="Facade pink vibes" loading="lazy" />
-          </button>
-          <button class="gItem" data-img="assets/gallery-4.jpg" data-alt="Dessert close-up">
-            <img src="assets/gallery-4.jpg" alt="Dessert close-up" loading="lazy" />
-          </button>
-        </div>
-      </div>
-
-      <!-- Lightbox -->
-      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
-        <button class="lightbox__backdrop" id="lightboxClose" aria-label="Close"></button>
-        <figure class="lightbox__panel">
-          <img id="lightboxImg" alt="" />
-          <figcaption id="lightboxCap"></figcaption>
-          <button class="lightbox__x" id="lightboxX" aria-label="Close">×</button>
-        </figure>
-      </div>
-    </section>
-
-    <!-- LOCATION -->
-    <section class="section" id="location">
-      <div class="container">
-        <div class="sectionHead">
-          <h2 data-i18n="loc_h2">Контакты и как добраться</h2>
-          <p>Schwarzastraße 9, 12055 Berlin · Neukölln / Rixdorf</p>
-        </div>
-
-        <div class="locGrid">
-          <div class="locCard">
-            <h3 data-i18n="loc_card_h">Контакты</h3>
-
-            <div class="kv">
-              <div class="kv__row">
-                <span class="kv__k" data-i18n="loc_phone_k">Телефон</span>
-                <a class="kv__v link" href="tel:+491632301455">+49 163 2301455</a>
-              </div>
-              <div class="kv__row">
-                <span class="kv__k" data-i18n="loc_addr_k">Адрес</span>
-                <span class="kv__v">Schwarzastraße 9, 12055 Berlin</span>
-              </div>
-              <div class="kv__row">
-                <span class="kv__k" data-i18n="loc_hours_k">Часы</span>
-                <span class="kv__v" id="hoursFull">Mo–Fr 08:00–18:00 · Sa–Su 09:00–18:00</span>
-              </div>
-              <div class="kv__row">
-                <span class="kv__k" data-i18n="loc_feat_k">Особенности</span>
-                <span class="kv__v">
-                  Wi-Fi · <span data-i18n="outdoor">Outdoor</span> · <span data-i18n="takeaway">Takeaway</span> · <span data-i18n="cards">Cards</span> ·
-                  <span class="dogPill"><span class="paw" aria-hidden="true">🐾</span><span data-i18n="dog_friendly">Dog friendly</span></span>
-                </span>
-              </div>
-            </div>
-
-            <div class="btnRow">
-              <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps?q=52.472729,13.454635" data-i18n="route">Маршрут</a>
-              <button class="btn btn--ghost" id="copyCoords" type="button" data-i18n="copy_coords">Скопировать координаты</button>
-            </div>
-
-            <div class="faq">
-              <details>
-                <summary data-i18n="faq1_q">Можно ли работать с ноутбуком?</summary>
-                <p data-i18n="faq1_a">Да — Wi-Fi и спокойная атмосфера подходят для работы.</p>
-              </details>
-              <details>
-                <summary data-i18n="faq2_q">Dog friendly?</summary>
-                <p data-i18n="faq2_a">Да — можно приходить с собакой 🐾.</p>
-              </details>
-              <details>
-                <summary data-i18n="faq3_q">Можно ли взять с собой?</summary>
-                <p data-i18n="faq3_a">Да — take away доступен.</p>
-              </details>
-            </div>
-          </div>
-
-          <div class="mapCard" aria-label="Map">
-            <iframe
-              title="Map: That Pink Café"
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=13.4508%2C52.4713%2C13.4585%2C52.4741&layer=mapnik&marker=52.472729%2C13.454635">
-            </iframe>
-            <div class="mapCard__hint">
-              <span data-i18n="coords_label">Координаты:</span>
-              <span class="mono">52.472729, 13.454635</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="footerCta">
-          <div>
-            <h2 data-i18n="footer_h">Забежать на кофе сегодня?</h2>
-            <p class="muted" data-i18n="footer_p">Открой карту, скопируй адрес и приходи.</p>
-          </div>
-          <div class="footerCta__actions">
-            <a class="btn" href="#location" data-i18n="footer_btn1">Контакты</a>
-            <a class="btn btn--ghost" href="#top" data-i18n="footer_btn2">Наверх</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p>© <span id="year"></span> That Pink Café · Berlin</p>
-      <p class="muted small" data-i18n="footer_note">Статический лендинг · GitHub Pages</p>
     </div>
-  </footer>
 
-  <!-- Structured data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CafeOrCoffeeShop",
-    "name": "That Pink Café (ex Geschwister Nothaft)",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Schwarzastraße 9",
-      "postalCode": "12055",
-      "addressLocality": "Berlin",
-      "addressCountry": "DE"
-    },
-    "geo": { "@type": "GeoCoordinates", "latitude": 52.472729, "longitude": 13.454635 },
-    "telephone": "+49 163 2301455",
-    "openingHoursSpecification": [
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
-      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"18:00"}
-    ]
-  }
-  </script>
+    <figure class="heroCard">
+      <img src="assets/hero.jpg" alt="That Pink Café interior" />
+      <figcaption>Schwarzastraße 9 · Berlin</figcaption>
+    </figure>
 
-  <script src="script.js"></script>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="sectionHead">
+      <h2 data-i18n="about_h2">О месте</h2>
+      <p data-i18n="about_p">
+        Уютное кафе в Neukölln / Rixdorf. Отлично подходит для встреч и работы.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="section section--alt" id="menu">
+  <div class="container">
+    <div class="sectionHead">
+      <h2 data-i18n="menu_h2">Меню</h2>
+      <p data-i18n="menu_p">Цены по фото меню, размеры S / L</p>
+    </div>
+
+    <div class="menuGrid">
+      <!-- Drinks -->
+      <div class="menuCol">
+        <h3 data-i18n="m1_h">Напитки</h3>
+        <ul class="menuList">
+          <li><span>Espresso</span><span class="price" data-price="2.5" data-price2="3.3"></span></li>
+          <li><span>Americano</span><span class="price" data-price="3.2" data-price2="3.9"></span></li>
+          <li><span>Cappuccino</span><span class="price" data-price="3.9" data-price2="4.9"></span></li>
+          <li><span>Tea</span><span class="price" data-price="4.3" data-price2="4.7"></span></li>
+          <li><span>Hot choco</span><span class="price" data-price="4.4" data-price2="4.9"></span></li>
+        </ul>
+      </div>
+
+      <!-- Food -->
+      <div class="menuCol">
+        <h3 data-i18n="food_h">Еда</h3>
+
+        <div class="foodBlock">
+          <div class="foodHead">
+            <div>
+              <div class="foodTitle">Sandwiches</div>
+              <div class="foodSub">Hummus / Cheese / Salami / Avo</div>
+            </div>
+            <span class="badgePrice">€6.9</span>
+          </div>
+        </div>
+
+        <div class="foodBlock">
+          <div class="foodHead">
+            <div class="foodTitle">Overnight Oats</div>
+            <span class="badgePrice">€5.5</span>
+          </div>
+        </div>
+
+        <div class="foodBlock">
+          <div class="foodHead">
+            <div class="foodTitle">Chia Mango</div>
+            <span class="badgePrice">€5.5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="sectionHead">
+      <h2 data-i18n="rev_h2">Отзывы</h2>
+      <p data-i18n="rev_p">Что говорят гости</p>
+    </div>
+
+    <div class="carousel">
+      <div class="carousel__viewport" id="revViewport">
+        <div class="carousel__track" id="revTrack"></div>
+      </div>
+
+      <div class="carousel__controls">
+        <button class="iconBtn" id="revPrev">‹</button>
+        <div class="dots" id="revDots"></div>
+        <button class="iconBtn" id="revNext">›</button>
+      </div>
+    </div>
+
+    <!-- Leave review -->
+    <div class="leaveReview">
+      <div>
+        <h3 data-i18n="leave_h">Оставить отзыв</h3>
+        <p class="muted" data-i18n="leave_p">Это помогает кафе расти 🐾</p>
+      </div>
+      <div class="leaveReview__actions">
+        <a class="btn" target="_blank"
+           href="https://www.google.com/search?q=That+Pink+Cafe+Berlin&utm_source=landing&utm_medium=review_btn&utm_campaign=reviews">
+          Google
+        </a>
+        <a class="btn btn--ghost" target="_blank"
+           href="https://www.tripadvisor.com/Search?q=That%20Pink%20Cafe%20Berlin&utm_source=landing&utm_medium=review_btn&utm_campaign=reviews">
+          Tripadvisor
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section class="section section--alt" id="gallery">
+  <div class="container">
+    <div class="sectionHead">
+      <h2 data-i18n="gal_h2">Фото</h2>
+    </div>
+
+    <div class="gallery gallery--creative">
+      <button class="gItem gItem--a" data-img="assets/gallery-1.jpg"><img src="assets/gallery-1.jpg"></button>
+      <button class="gItem gItem--b" data-img="assets/gallery-2.jpg"><img src="assets/gallery-2.jpg"></button>
+      <button class="gItem gItem--c" data-img="assets/gallery-3.jpg"><img src="assets/gallery-3.jpg"></button>
+      <button class="gItem gItem--d" data-img="assets/gallery-4.jpg"><img src="assets/gallery-4.jpg"></button>
+      <button class="gItem gItem--e" data-img="assets/gallery-5.jpg"><img src="assets/gallery-5.jpg"></button>
+      <button class="gItem gItem--f" data-img="assets/gallery-6.jpg"><img src="assets/gallery-6.jpg"></button>
+      <button class="gItem gItem--g" data-img="assets/gallery-7.jpg"><img src="assets/gallery-7.jpg"></button>
+      <button class="gItem gItem--h" data-img="assets/gallery-8.jpg"><img src="assets/gallery-8.jpg"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOCATION ================= -->
+<section class="section" id="location">
+  <div class="container">
+    <h2 data-i18n="loc_h2">Контакты</h2>
+    <p>Schwarzastraße 9, 12055 Berlin</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© <span id="year"></span> That Pink Café</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
