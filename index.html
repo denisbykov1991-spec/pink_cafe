@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>That Pink Café — Berlin · Rixdorf</title>
+  <meta name="description" content="Specialty coffee & cozy meeting point in Rixdorf. Pastries, sandwiches, Wi-Fi, outdoor seating, takeaway." />
+
+  <meta property="og:title" content="That Pink Café — Berlin · Rixdorf" />
+  <meta property="og:description" content="Specialty coffee, pastries & cozy vibes. Wi-Fi, outdoor seating, takeaway." />
+  <meta property="og:image" content="assets/og.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip" href="#content" data-i18n="skip">Перейти к содержимому</a>
+
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand__mark" aria-hidden="true">
+          <span class="brand__dot"></span>
+        </span>
+        <span class="brand__text">
+          <strong>That Pink Café</strong>
+          <span class="brand__sub" data-i18n="brand_sub">Berlin · Rixdorf · ex Geschwister Nothaft</span>
+        </span>
+      </a>
+
+      <div class="header__right">
+        <div class="lang">
+          <button class="lang__btn" id="langBtn" aria-expanded="false" aria-controls="langMenu">
+            <span id="langLabel">RU</span>
+            <span class="lang__chev" aria-hidden="true">▾</span>
+          </button>
+          <div class="lang__menu" id="langMenu" role="menu" aria-label="Language">
+            <button role="menuitem" data-lang="ru">Русский</button>
+            <button role="menuitem" data-lang="en">English</button>
+            <button role="menuitem" data-lang="de">Deutsch</button>
+          </div>
+        </div>
+
+        <button class="navBtn" id="navBtn" aria-expanded="false" aria-controls="nav">
+          <span class="navBtn__bar"></span>
+          <span class="navBtn__bar"></span>
+          <span class="navBtn__bar"></span>
+          <span class="srOnly" data-i18n="menu">Меню</span>
+        </button>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a href="#about" data-i18n="nav_about">О месте</a>
+        <a href="#menu" data-i18n="nav_menu">Меню</a>
+        <a href="#reviews" data-i18n="nav_reviews">Отзывы</a>
+        <a href="#gallery" data-i18n="nav_gallery">Фото</a>
+        <a href="#location" data-i18n="nav_contacts">Контакты</a>
+        <a class="btn btn--small" href="#visit" data-i18n="nav_visit">Как зайти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill">
+            <span data-i18n="hero_pill">Specialty coffee · cozy meeting point</span>
+          </p>
+
+          <h1 data-i18n="hero_h1">Розовое кафе, где хочется задержаться</h1>
+          <p class="lead" data-i18n="hero_lead">
+            Кофе, выпечка и сэндвичи в атмосфере “cozy & minimal”.
+            Wi-Fi, посадка внутри и на улице, можно взять с собой.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#location" data-i18n="hero_cta_map">Открыть карту</a>
+            <a class="btn btn--ghost" href="#menu" data-i18n="hero_cta_menu">Посмотреть меню</a>
+          </div>
+
+          <div class="metaCards">
+            <div class="metaCard">
+              <span class="metaCard__k" data-i18n="meta_addr_k">Адрес</span>
+              <span class="metaCard__v">Schwarzastraße 9, 12055 Berlin</span>
+            </div>
+            <div class="metaCard">
+              <span class="metaCard__k" data-i18n="meta_today_k">Сегодня</span>
+              <span class="metaCard__v" id="todayHours">…</span>
+            </div>
+            <div class="metaCard">
+              <span class="metaCard__k" data-i18n="meta_phone_k">Телефон</span>
+              <a class="metaCard__v link" href="tel:+491632301455">+49 163 2301455</a>
+            </div>
+          </div>
+
+          <p class="note" data-i18n="hero_note">
+            Ранее место было известно как <em>Geschwister Nothaft</em>.
+          </p>
+        </div>
+
+        <div class="hero__media">
+          <figure class="heroCard">
+            <img src="assets/hero.jpg" alt="That Pink Café facade" loading="eager" decoding="async" />
+            <figcaption>
+              <span data-i18n="hero_caption_left">Coffee · pastries · sandwiches</span>
+              <span class="sep">·</span>
+              <span data-i18n="hero_caption_right">Takeaway · Outdoor seating</span>
+            </figcaption>
+          </figure>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat__n">4.6</div>
+              <div class="stat__t" data-i18n="stat_rating">оценка (Google)</div>
+            </div>
+            <div class="stat">
+              <div class="stat__n">Wi-Fi</div>
+              <div class="stat__t" data-i18n="stat_wifi">удобно работать</div>
+            </div>
+            <div class="stat">
+              <div class="stat__n">€</div>
+              <div class="stat__t" data-i18n="stat_price">ориентир по чеку</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="about_h2">О месте</h2>
+          <p data-i18n="about_p">
+            Уютное кафе в Neukölln/Rixdorf: напитки (включая matcha), выпечка и сэндвичи.
+            Часто отмечают дружелюбный сервис и “laptop-friendly” формат.
+          </p>
+        </div>
+
+        <div class="cards3">
+          <article class="card">
+            <h3 data-i18n="card1_h">Кофе и напитки</h3>
+            <p data-i18n="card1_p">Классика + любимые позиции гостей: капучино, matcha, соки.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card2_h">Еда</h3>
+            <p data-i18n="card2_p">Выпечка, круассаны, берлинеры и сэндвичи (в т.ч. grilled).</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card3_h">Комфорт</h3>
+            <p data-i18n="card3_p">Wi-Fi, можно сидеть внутри/снаружи, take away, карты.</p>
+          </article>
+        </div>
+
+        <div class="banner" id="visit">
+          <div class="banner__text">
+            <h3 data-i18n="banner_h">Зайти на кофе по пути</h3>
+            <p data-i18n="banner_p">
+              Скопируй адрес и открой маршрут в Google Maps. Отлично подходит для встречи или работы.
+            </p>
+          </div>
+          <div class="banner__actions">
+            <button class="btn btn--ghost" id="copyAddress" type="button" data-i18n="copy_addr">
+              Скопировать адрес
+            </button>
+            <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps?q=52.472729,13.454635" data-i18n="open_maps">
+              Открыть в Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="section section--alt" id="menu">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="menu_h2">Меню (тизер)</h2>
+          <p data-i18n="menu_p">
+            Ниже — аккуратная витрина направлений. Точные цены/позиции можно добавить, если пришлёшь меню/скрин.
+          </p>
+        </div>
+
+        <div class="menuGrid">
+          <div class="menuCol">
+            <h3 data-i18n="m1_h">Кофе</h3>
+            <ul class="menuList">
+              <li><span>Espresso / Americano</span><span class="muted">—</span></li>
+              <li><span>Cappuccino / Flat white</span><span class="muted">—</span></li>
+              <li><span>Filter coffee</span><span class="muted">—</span></li>
+            </ul>
+          </div>
+
+          <div class="menuCol">
+            <h3 data-i18n="m2_h">Любимое</h3>
+            <ul class="menuList">
+              <li><span>Matcha latte</span><span class="muted">—</span></li>
+              <li><span data-i18n="m2_item2">Домашняя выпечка</span><span class="muted">—</span></li>
+              <li><span data-i18n="m2_item3">Сэндвичи / grilled</span><span class="muted">—</span></li>
+            </ul>
+          </div>
+
+          <div class="menuCol">
+            <h3 data-i18n="m3_h">Опции</h3>
+            <ul class="menuList">
+              <li><span data-i18n="m3_item1">Вегетарианские варианты</span><span class="muted">✓</span></li>
+              <li><span data-i18n="m3_item2">Десерты и выпечка</span><span class="muted">✓</span></li>
+              <li><span data-i18n="m3_item3">To-go формат</span><span class="muted">✓</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="fineprint">
+          <p data-i18n="menu_note">
+            Упоминания в обзорах: grilled sandwiches, croissants/berliner, cappuccino, matcha, juice.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="rev_h2">Отзывы</h2>
+          <p data-i18n="rev_p">
+            Короткие пересказы реальных отзывов из открытых источников (чтобы без копипаста).
+          </p>
+        </div>
+
+        <div class="carousel" aria-label="Reviews carousel">
+          <div class="carousel__track" id="revTrack">
+            <!-- Slides injected by script.js -->
+          </div>
+
+          <div class="carousel__controls">
+            <button class="iconBtn" id="revPrev" aria-label="Previous">‹</button>
+            <div class="dots" id="revDots" aria-label="Slides"></div>
+            <button class="iconBtn" id="revNext" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <p class="muted small" data-i18n="rev_hint">
+          Хочешь — добавлю блок “оставить отзыв” с кнопками Google/Tripadvisor и UTM.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section--alt" id="gallery">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="gal_h2">Фото</h2>
+          <p data-i18n="gal_p">Положи изображения в папку <code>/assets</code> (имена файлов — как ниже).</p>
+        </div>
+
+        <div class="gallery">
+          <button class="gItem" data-img="assets/gallery-1.jpg" data-alt="Pastry counter">
+            <img src="assets/gallery-1.jpg" alt="Pastry counter" loading="lazy" />
+          </button>
+          <button class="gItem" data-img="assets/gallery-2.jpg" data-alt="Interior">
+            <img src="assets/gallery-2.jpg" alt="Interior" loading="lazy" />
+          </button>
+          <button class="gItem" data-img="assets/gallery-3.jpg" data-alt="Facade pink vibes">
+            <img src="assets/gallery-3.jpg" alt="Facade pink vibes" loading="lazy" />
+          </button>
+          <button class="gItem" data-img="assets/gallery-4.jpg" data-alt="Dessert close-up">
+            <img src="assets/gallery-4.jpg" alt="Dessert close-up" loading="lazy" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer">
+        <button class="lightbox__backdrop" id="lightboxClose" aria-label="Close"></button>
+        <figure class="lightbox__panel">
+          <img id="lightboxImg" alt="" />
+          <figcaption id="lightboxCap"></figcaption>
+          <button class="lightbox__x" id="lightboxX" aria-label="Close">×</button>
+        </figure>
+      </div>
+    </section>
+
+    <!-- LOCATION -->
+    <section class="section" id="location">
+      <div class="container">
+        <div class="sectionHead">
+          <h2 data-i18n="loc_h2">Контакты и как добраться</h2>
+          <p>Schwarzastraße 9, 12055 Berlin · Neukölln</p>
+        </div>
+
+        <div class="locGrid">
+          <div class="locCard">
+            <h3 data-i18n="loc_card_h">Контакты</h3>
+
+            <div class="kv">
+              <div class="kv__row">
+                <span class="kv__k" data-i18n="loc_phone_k">Телефон</span>
+                <a class="kv__v link" href="tel:+491632301455">+49 163 2301455</a>
+              </div>
+              <div class="kv__row">
+                <span class="kv__k" data-i18n="loc_addr_k">Адрес</span>
+                <span class="kv__v">Schwarzastraße 9, 12055 Berlin</span>
+              </div>
+              <div class="kv__row">
+                <span class="kv__k" data-i18n="loc_hours_k">Часы</span>
+                <span class="kv__v" id="hoursFull">Mo–Fr 08:00–18:00 · Sa–Su 09:00–18:00</span>
+              </div>
+              <div class="kv__row">
+                <span class="kv__k" data-i18n="loc_feat_k">Особенности</span>
+                <span class="kv__v" id="featLine">Wi-Fi · Outdoor seating · Takeaway · Cards</span>
+              </div>
+            </div>
+
+            <div class="btnRow">
+              <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps?q=52.472729,13.454635" data-i18n="route">
+                Маршрут
+              </a>
+              <button class="btn btn--ghost" id="copyCoords" type="button" data-i18n="copy_coords">
+                Скопировать координаты
+              </button>
+            </div>
+
+            <div class="faq">
+              <details>
+                <summary data-i18n="faq1_q">Можно ли работать с ноутбуком?</summary>
+                <p data-i18n="faq1_a">Да — часто упоминают Wi-Fi и “laptop-friendly” формат.</p>
+              </details>
+              <details>
+                <summary data-i18n="faq2_q">Есть ли вегетарианские опции?</summary>
+                <p data-i18n="faq2_a">Да — в обзорах отмечают варианты для вегетарианцев.</p>
+              </details>
+              <details>
+                <summary data-i18n="faq3_q">Можно ли взять с собой?</summary>
+                <p data-i18n="faq3_a">Да — take away доступен.</p>
+              </details>
+            </div>
+          </div>
+
+          <div class="mapCard" aria-label="Map">
+            <iframe
+              title="Map: That Pink Café"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=13.4508%2C52.4713%2C13.4585%2C52.4741&layer=mapnik&marker=52.472729%2C13.454635">
+            </iframe>
+            <div class="mapCard__hint">
+              <span data-i18n="coords_label">Координаты:</span>
+              <span class="mono">52.472729, 13.454635</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footerCta">
+          <div>
+            <h2 data-i18n="footer_h">Забежать на кофе сегодня?</h2>
+            <p class="muted" data-i18n="footer_p">Открой карту, скопируй адрес и приходи.</p>
+          </div>
+          <div class="footerCta__actions">
+            <a class="btn" href="#location" data-i18n="footer_btn1">Контакты</a>
+            <a class="btn btn--ghost" href="#top" data-i18n="footer_btn2">Наверх</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> That Pink Café · Berlin</p>
+      <p class="muted small" data-i18n="footer_note">Статический лендинг · GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "That Pink Café (ex Geschwister Nothaft)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Schwarzastraße 9",
+      "postalCode": "12055",
+      "addressLocality": "Berlin",
+      "addressCountry": "DE"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 52.472729, "longitude": 13.454635 },
+    "telephone": "+49 163 2301455",
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"18:00"}
+    ]
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
